@@ -1,0 +1,72 @@
+.white-strip
+  .wrapper.padding2
+    .title
+      Поможем получить следующие виды банковских гарантий:
+
+    .benefits
+      .benefit
+        Тендерная банковская гарантия
+      .benefit
+        Банковская гарантия возврата аванса
+      .benefit
+        Банковская гарантия исполнения контракта
+      .benefit
+        Гарантия обеспечения гарантийных обязательств
+
+
+.wrapper.padding1
+  .benefits-header
+    Условия предоставления банковской гарантии:
+  .benefits
+    .benefit
+      Без залога и открытия рассчетного счета
+    .benefit
+      Оформление от 1 дня
+    .benefit
+      Наши услуги стоят от 17 000 рублей
+    .benefit
+      Работаем по всей России
+
+
+.wrapper
+  .phone
+    8 800 2000 600
+
+
+.wrapper
+  .order-button
+    Заказать консультацию
+
+#map
+
+.modal-overlay
+.modal-dialog
+  .header
+    Заказать консультацию
+  .body
+    %form{action: '#'}
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+      %button#send-order
+        Заказать консультацию
+
+.modal-thank-you
+  .header
+    Спасибо!
+  .body
+    Мы свяжемся с вами уже очень скоро.
+
+
+    %button#hide-thank-you
+      Я буду ждать!
+
+
+%script#balloon-template{type: :template}
+  .balloon
+    .content
+      ООО "Финуслуг"
+      %br
+      улица Такая, дом 13, офис 42
+      %br
+      тел: 8 800 2000 600
+    .arrow-up
