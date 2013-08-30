@@ -30,14 +30,35 @@
 
 .wrapper
   .phone
-    8 800 2000 600
+    8 804 333 19 56
+    .small
+      (звонок бесплатный)
 
 
 .wrapper
+  %form.inline{action: '#'}
+    %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+    %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+    %button#send-order
+      Заказать консультацию
+
+
+-#.wrapper
   .order-button
     Заказать консультацию
 
-#map
+#footer
+  ООО "Финуслуги" , г. Москва, Научный проезд 14 А
+  %br
+  Работаем ежедневно с 10-00 до 20-00
+  %br
+  8-499-704-51-19
+  %br
+  8-804-333-19-56 (звонок бесплатный)
+  %br
+  %a{href: 'mailto:bg@finuslug.ru'}
+    bg@finuslug.ru
+
 
 .modal-overlay
 .modal-dialog
@@ -59,14 +80,3 @@
 
     %button#hide-thank-you
       Я буду ждать!
-
-
-%script#balloon-template{type: :template}
-  .balloon
-    .content
-      ООО "Финуслуг"
-      %br
-      улица Такая, дом 13, офис 42
-      %br
-      тел: 8 800 2000 600
-    .arrow-up
